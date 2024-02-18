@@ -1,0 +1,24 @@
+1. Setup an Express server
+    - install express nodemon
+    - create an express app
+    - create basic ruoutes
+    - test your app
+
+2. Set up your database (db.js)
+    - create .env file
+    - install dotenv and configure it
+    - install mongoose and connect ot mongoURI
+    - configure database connection using mongoURI
+
+3. Set UserModel
+    - mongoose.Schema
+    - mongoose.model("collectionName", userSchema)
+    - export UserModel
+    
+4. Set userRouter
+    - install jsonwebtoken
+    - install bcrypt
+    - set register route
+    - send res with proper status
+    - set login route
+    - import it in index.js and use it as middleware with "/users"
