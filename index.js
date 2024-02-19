@@ -6,8 +6,12 @@ dotenv.config();
 
 const port = process.env.PORT; //
 
+// Enable CORS for all origins
 const app = express(); // server created
 app.use(express.json())
+app.use(cors({
+  origin: '*'
+}))
 app.use("/users", userRouter)
 
 app.get("/", (req, res) => {
